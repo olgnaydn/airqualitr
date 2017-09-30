@@ -1,1 +1,7 @@
 Datasets and db details..
+
+Veri seti şimdilik google drive'da. 1.5 GB'nin üzerinde bir veri olduğu için, package ile birlikte yüklenmesi tercih edilmeyebilir.
+Bu sebeple, AWS'nin RDS servislerinden yararlanılması daha etkili olacaktır. PostgreSQL oldukça yerinde olacaktır.
+
+Veri setine erişim için : https://drive.google.com/open?id=0Bw6PrtXcmIZnaGktQzB0OW9uUDg
+
