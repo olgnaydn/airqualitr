@@ -1,9 +1,9 @@
 Package: airqualitr
 Title: What the Package Does (one line, title case)
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Authors@R: person("Olgun", "Aydin", email = "olgunaydinn@gmail.com", role = c("aut", "cre"))
+Description: Provides analyzing airquality data in R.
 Depends: R (>= 3.4.2)
-License: What license is it under?
+License: 
 Encoding: UTF-8
 LazyData: true
