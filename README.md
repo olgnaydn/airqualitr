@@ -24,3 +24,5 @@ The aim of this development was to enable researchers to access historical Turki
 effortlessly by using R, and to provide visualisation of this information on online maps with the help of the
 leaflet library and providing support for making predictions of AQ indicator values at a geo location using
 spatial statistics, where there is no AQ monitoring information.
+
+presented in uRos 2017 : http://www.r-project.ro/conference2017/agenda_uRos2017.pdf
