@@ -1,15 +1,12 @@
 Package: airqualitr
 Title: airqualitR: An R package on Air Quality - Information for Turkey 
 Version: 0.0.1
-Authors@R: c(
-
-person("Olgun", "Aydin", email = "olgunaydinn@gmail.com", role = c("aut","cre")),
-person("Umit", "Isikdag", email = "uisikdag@gmail.com", role = "aut"))
-
+Authors@R: person("Olgun", "Aydin", email = "olgunaydinn@gmail.com", role = c("aut","cre"))
 Description: Provides analyzing airquality data in R.
 Depends: R (>= 3.4.2)
 License: 
 Encoding: UTF-8
 LazyData: true
 Imports:
-  RPostgreSQL
+    RPostgreSQL
+RoxygenNote: 6.0.1
