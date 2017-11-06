@@ -7,6 +7,7 @@ export(getairq)
 importFrom(DBI,dbDriver)
 importFrom(RPostgreSQL,dbConnect)
 importFrom(RPostgreSQL,dbGetQuery)
+importFrom(ggplot2,geom_point)
 importFrom(ggmap,qmap)
 
 
