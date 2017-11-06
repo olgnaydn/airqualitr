@@ -2,3 +2,6 @@
 
 import(RPostgreSQL)
 import(ggmap)
+export(listlocations)
+export(showstations)
+export(getairq)
