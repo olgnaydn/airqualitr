@@ -4,7 +4,8 @@
 export(listlocations)
 export(showstations)
 export(getairq)
-import(RPostgreSQL)
-import(ggmap)
+importFrom(RPostgreSQL,dbDriver)
+importFrom(RPostgreSQL,dbGetQuery)
+importFrom(ggmap,qmap)
 
 
