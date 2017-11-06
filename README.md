@@ -1,5 +1,4 @@
-# airqualitr
-airqualitR: An R package on Air Quality Information for Turkey
+# airqualitR: An R package on Air Quality Information for Turkey
 
 The issue of monitoring air quality and making predictions related to the air quality indicators has been an
 active area of research for many years. The recent developments in IoT technologies facilitated the data
