@@ -8,6 +8,7 @@ importFrom(DBI,dbDriver)
 importFrom(RPostgreSQL,dbConnect)
 importFrom(RPostgreSQL,dbGetQuery)
 importFrom(ggplot2,geom_point)
+importFrom(ggplot2,aes)
 importFrom(ggmap,qmap)
 
 
