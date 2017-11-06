@@ -4,7 +4,7 @@ S3method(update,package_deps)
 export(listlocations)
 export(showstations)
 export(getairq)
-importFrom(RPostgreSQL,dbDriver)
+importFrom(DBI,dbDriver)
 importFrom(RPostgreSQL,dbGetQuery)
 importFrom(ggmap,qmap)
 
