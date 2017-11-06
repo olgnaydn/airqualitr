@@ -22,7 +22,15 @@ located in all cities of Turkey. The measurements provided by the packages were 
 Air Quality Open Data Repository http://www.havaizleme.gov.tr which is developed in Turkish language.
 The aim of this development was to enable researchers to access historical Turkish Air Quality information
 effortlessly by using R, and to provide visualisation of this information on online maps with the help of the
-leaflet library and providing support for making predictions of AQ indicator values at a geo location using
+leaflet and google maps library and providing support for making predictions of AQ indicator values at a geo location using
 spatial statistics, where there is no AQ monitoring information.
 
 presented in uRos 2017 : http://www.r-project.ro/conference2017/agenda_uRos2017.pdf
+
+
+# Installation process
+
+```
+devtools::install_github(olgnaydn/airqualitr/airqualitr)
+```
+
