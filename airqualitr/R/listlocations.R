@@ -15,14 +15,18 @@ listlocations <- function(city)
                    port=5432, user = "airqualitr_team", password = "msgsu2017")
   
   #defining query for getting stations according to user defined city
-  query<- paste("select distinct place, lat, long from airquality_data where place like", 
+  query_station_info<- paste("select distinct place, lat, long from airquality_data where place like", 
                 "'",city,"%","'",
                 " group by place, lat, long",sep = "")
   
   #getting stations for user defined city
-  stations <- dbGetQuery(con,query)
+  stations <- dbGetQuery(con,query_station_info)
+  
+  #getting attributes available for user defined city 
+  attributes <- dbGetQuery(con,"select * from airquality_data limit 1")
+  available_attributes <- colnames(attributes)[4:27]
 
-  list(stations)
+  list("station_info",stations,"available_attributes",available_attributes )
                          
 
 }
