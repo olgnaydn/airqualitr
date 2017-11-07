@@ -66,7 +66,7 @@ Let us know, if you have any questions, recommendation related to package
 
 Kindly find contact information of us below,
 
-Olgun AYDIN, olgunaydinn@gmail.com, info@olgunaydin.com
+Olgun AYDIN, olgunaydinn@gmail.com, info@olgunaydin.com - 
 Dr. Umit Isikdag, uisikdag@gmail.com
 
 
