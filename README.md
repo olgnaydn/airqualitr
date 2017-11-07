@@ -30,7 +30,43 @@ presented in uRos 2017 : http://www.r-project.ro/conference2017/agenda_uRos2017.
 
 # Installation process
 
+To install the package kindly use command below.
+If you havent installed devtools yet, please install it before running following command
+
 ```
 devtools::install_github(olgnaydn/airqualitr/airqualitr)
 ```
+
+Let's make simple examples..
+
+For example, if you would like to get airquality statitons in a city. You could use listlocations function
+
+Following command, 
+getting station names for Izmir a city from west side of Turkey, geo location info of them, available attributes in these stations
+
+```
+listlocations("IZMIR")
+```
+
+If you would like to generate map to visiualize average value of spesific attribute at the stations of a city defined by you,
+You could directly use showstations function. It will generate bubbled map by using Google Map.
+
+Following command could be used for generating bubbled map includes average value of PM10 collected from stations at Izmir.
+
+```
+showstations("IZMIR","PM10")
+```
+
+getairq function is available for getting attributes, timestamp, station name, geo location of stations in a city of Turkey. 
+You could also get more than one attributes by using this function.
+
+Please feel free to write to us and contribute the package.
+
+Let us know, if you have any questions, recommendation related to package
+
+Kindly find contact information below,
+
+Olgun AYDIN, olgunaydinn@gmail.com
+Dr. Umit Isikda, uisikdag@gmail.com
+
 
