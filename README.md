@@ -60,6 +60,12 @@ showstations("IZMIR","PM10")
 getairq function is available for getting attributes, timestamp, station name, geo location of stations in a city of Turkey. 
 You could also get more than one attributes by using this function.
 
+With following command, you could get PM10 and CO attributes as time series for each stations at IZMIR.
+
+```
+getairq("IZMIR", '"PM10","CO"')
+```
+
 Please feel free to write to us and contribute the package.
 
 Let us know, if you have any questions, recommendation related to package
