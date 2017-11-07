@@ -25,11 +25,11 @@ showstations <- function(city,attribute)
   map <- qmap(city, zoom =10)
 
   #plotting map
-  map + geom_point(data = values_for_defined_city, aes(x = long, y = lat, fill=avg_values), color="blue",size=10, alpha=0.7)
+  bubbled_map<- map + geom_point(data = values_for_defined_city, aes(x = long, y = lat, fill=avg_values), color="blue",size=10, alpha=0.7)
 
   #returning calcuated values
   list("values_for_defined_city",values_for_defined_city)
-  return(map)
+  return(bubbled_map)
 
   }
 
