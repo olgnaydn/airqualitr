@@ -29,6 +29,7 @@ showstations <- function(city,attribute)
 
   #returning calcuated values
   list("values_for_defined_city",values_for_defined_city)
+  return(map)
 
   }
 
