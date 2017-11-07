@@ -19,5 +19,6 @@ getairq <- function(city, variables)
   #getting information for all stations of defined city
   values <- dbGetQuery(con,query_stations)
   values_for_defined_city <- values[grep(city, values$place),]
+  list(values_for_defined_city)
 
 }
