@@ -64,9 +64,9 @@ Please feel free to write to us and contribute the package.
 
 Let us know, if you have any questions, recommendation related to package
 
-Kindly find contact information below,
+Kindly find contact information of us below,
 
-Olgun AYDIN, olgunaydinn@gmail.com
-Dr. Umit Isikda, uisikdag@gmail.com
+Olgun AYDIN, olgunaydinn@gmail.com, info@olgunaydin.com
+Dr. Umit Isikdag, uisikdag@gmail.com
 
 
