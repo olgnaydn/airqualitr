@@ -34,7 +34,7 @@ To install the package kindly use command below.
 If you havent installed devtools yet, please install it before running following command
 
 ```
-devtools::install_github(olgnaydn/airqualitr/airqualitr)
+devtools::install_github("olgnaydn/airqualitr/airqualitr")
 ```
 
 Let's make simple examples..
