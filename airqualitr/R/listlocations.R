@@ -10,7 +10,7 @@ listlocations <- function(city)
   drv <- dbDriver("PostgreSQL")
 
   #connecting server
-  con <- dbConnect(drv, dbname = "development",
+  con <- dbConnect(drv, dbname = "airqualitr",
                    host = "108.59.81.28",
                    port=5432, user = "olgun", password = "123456aq")
 
