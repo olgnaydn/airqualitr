@@ -15,9 +15,9 @@ listlocations <- function(city)
                    port=5432, user = "olgun", password = "123456aq")
 
   #defining query for getting stations according to user defined city
-  query_station_info<- paste("select distinct 'Mevki', lat, long from airqualitr where 'Mevki' like",
+  query_station_info<- paste("select distinct place, lat, long from airqualitr where place like",
                 "'",city,"%","'",
-                " group by 'Mevki', lat, long",sep = "")
+                " group by place, lat, long",sep = "")
 
   #getting stations for user defined city
   stations <- dbGetQuery(con,query_station_info)
