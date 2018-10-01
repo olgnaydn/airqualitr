@@ -7,14 +7,14 @@ showstations <- function(city,attribute)
   #getting Postgres Driver
   drv <- dbDriver("PostgreSQL")
 
-  #connectiong server
+  #connecting server
   con <- dbConnect(drv, dbname = "development",
-                   host = "airqualitr.clgjf7569y1t.us-west-2.rds.amazonaws.com",
-                   port=5432, user = "airqualitr_team", password = "msgsu2017")
+                   host = "108.59.81.28",
+                   port=5432, user = "olgun", password = "123456aq")
 
   #defining query for getting avg of attributes defined by user, according to user defined city
   query_station_values<- paste('select place, lat, long, avg(','"',attribute,'"',
-                            ') as avg_values from airquality_data where', '"',attribute,'"','is not null',
+                            ') as avg_values from airqualitr where', '"',attribute,'"','is not null',
                             ' group by place, lat, long',sep = "")
 
   #getting mean values for all stations of defined city

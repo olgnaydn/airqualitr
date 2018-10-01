@@ -9,12 +9,13 @@ getairq <- function(city, variables)
   drv <- dbDriver("PostgreSQL")
 
   #connectiong server
+  #connecting server
   con <- dbConnect(drv, dbname = "development",
-                   host = "airqualitr.clgjf7569y1t.us-west-2.rds.amazonaws.com",
-                   port=5432, user = "airqualitr_team", password = "msgsu2017")
+                   host = "108.59.81.28",
+                   port=5432, user = "olgun", password = "123456aq")
 
   #defining query for getting attributes defined by user, according to user defined city
-  query_stations<- paste('select place, date, lat, long, ', variables,' from airquality_data',sep = "")
+  query_stations<- paste('select place, date, lat, long, ', variables,' from airqualitr',sep = "")
 
   #getting information for all stations of defined city
   values <- dbGetQuery(con,query_stations)

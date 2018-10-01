@@ -9,13 +9,13 @@ listlocations <- function(city)
   #getting Postgres Driver
   drv <- dbDriver("PostgreSQL")
 
-  #connectiong server
+  #connecting server
   con <- dbConnect(drv, dbname = "development",
-                   host = "airqualitr.clgjf7569y1t.us-west-2.rds.amazonaws.com",
-                   port=5432, user = "airqualitr_team", password = "msgsu2017")
+                   host = "108.59.81.28",
+                   port=5432, user = "olgun", password = "123456aq")
 
   #defining query for getting stations according to user defined city
-  query_station_info<- paste("select distinct place, lat, long from airquality_data where place like",
+  query_station_info<- paste("select distinct place, lat, long from airqualitr where place like",
                 "'",city,"%","'",
                 " group by place, lat, long",sep = "")
 
@@ -23,7 +23,7 @@ listlocations <- function(city)
   stations <- dbGetQuery(con,query_station_info)
 
   #getting attributes available for user defined city
-  attributes <- dbGetQuery(con,"select * from airquality_data limit 1")
+  attributes <- dbGetQuery(con,"select * from airqualitr limit 1")
   available_attributes <- colnames(attributes)[4:27]
 
   list("station_info",stations,"available_attributes",available_attributes )
