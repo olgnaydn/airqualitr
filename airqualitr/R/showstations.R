@@ -13,13 +13,13 @@ showstations <- function(city,attribute)
                    port=5432, user = "olgun", password = "123456aq")
 
   #defining query for getting avg of attributes defined by user, according to user defined city
-  query_station_values<- paste('select place, lat, long, avg(','"',attribute,'"',
+  query_station_values<- paste('select Mevki, lat, long, avg(','"',attribute,'"',
                             ') as avg_values from airqualitr where', '"',attribute,'"','is not null',
-                            ' group by place, lat, long',sep = "")
+                            ' group by Mevki, lat, long',sep = "")
 
   #getting mean values for all stations of defined city
   values <- dbGetQuery(con,query_station_values)
-  values_for_defined_city <- values[grep(city, values$place),]
+  values_for_defined_city <- values[grep(city, values$Mevki),]
 
   #building map for defined city
   map <- qmap(city, zoom =10)
