@@ -15,7 +15,7 @@ listlocations <- function(city)
                    port=5432, user = "olgun", password = "123456aq")
 
   #defining query for getting stations according to user defined city
-  query_station_info<- paste("select distinct Mevki, lat, long from airqualitr where place like",
+  query_station_info<- paste("select distinct Mevki, lat, long from airqualitr where Mevki like",
                 "'",city,"%","'",
                 " group by Mevki, lat, long",sep = "")
 
